@@ -1,64 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Proyecto Monograph Dashboard
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Proyecto backend para gestionar y visualizar los datos que se envian a la base de datos que se creo para poder utilizar los metodos "GET", "POST", "DELETE" para [Front Prueba Tec. Alianza](https://github.com/Abic26/front_prueba_tec_alianza.git) mediante el sistema de inicio de sesión y registro de usuarios. Este proyecto brinda acceso a los usuarios para explorar bebidas, crear los datos de la base de datos del proyecto.
 
-## About Laravel
+## Tabla de Contenidos
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [Instalación](#instalación)
+- [Contribución](#Contribución)
+- [Créditos](#créditos)
+- [Licencia](#licencia)
+- [Contacto](#contacto)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Instalación
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Sigue estos pasos para instalar y ejecutar la aplicación:
 
-## Learning Laravel
+1. Clonar el proyecto 
+```sh
+git clone https://github.com/Abic26/Back_Eglobal_Monograph_Dashboard.git
+```
+2. Seleccione donde descargo el proyecto:
+```sh
+cd ejemplo/ejemplo
+```
+3. Instala las dependencias:
+```sh
+composer update
+```
+4. Abrir el proyecto en el editor de código de preferencia, se recomienda Vsc (Visual Studio Code):
+```sh
+code .
+```
+5. migrar el proyecto.
+```sh
+php artisan migrate
+```
+6. inicializa el proyecto en local.
+```sh
+php artisan serve
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Contribución
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Cómo contribuir al proyecto.
+1. Clonar el proyecto:
+```sh
+git clone https://github.com/Abic26/Back_Eglobal_Monograph_Dashboard.git
+```
+2. Crea una rama para la contribución: 
+```sh
+git checkout -b feature/nueva-funcionalidad
+```
+3. Realice sus cambios y realiza los commits: 
+```sh
+git add .
+git commit -m "Agrega nueva funcionalidad"
+```
+4. Realize push con sus nuevos cambios: 
+```sh
+git push origin feature/nueva-funcionalidad
+```
 
-## Laravel Sponsors
+## Créditos
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Este proyecto fue creado por [Andres Felipe Lopez S. "Abic26"](https://github.com/Abic26).
 
-### Premium Partners
+## Licencia
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Este proyecto está bajo la Licencia MIT, lo que significa que puedes:
 
-## Contributing
+- Usar el código en tus proyectos personales o comerciales.
+- Modificar el código para satisfacer tus necesidades.
+- Distribuir el código modificado o sin modificar.
+- Incluir el código en otros proyectos (con los atributos adecuados).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**¡No tienes que pedir permiso!** Solo asegúrate de incluir el aviso de derechos de autor y la declaración de la Licencia MIT en las copias de tu proyecto.
 
-## Code of Conduct
+## Contacto
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Si tienes preguntas, sugerencias o comentarios sobre este proyecto, no dudes en ponerte en contacto. Puedes visitarme a través de:
 
-## Security Vulnerabilities
+- Correo electrónico: [abicsupa@gmail.com](mailto:abicsupa@gmail.com)
+- Sitio web: [Abic26_page](https://abicdev.vercel.app/)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+¡Espero escuchar tus pensamientos y opiniones!
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
