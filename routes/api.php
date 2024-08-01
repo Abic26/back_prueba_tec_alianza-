@@ -24,13 +24,14 @@ Route::post('/users', [UserController::class, 'store']);
 
 Route::post('/login', [LoginController::class, 'login']);
 
-Route::apiResource('/pending-orders', PendingOrderController::class);
-Route::get('/pending-orders/user/{user_id}', [PendingOrderController::class, 'getByUserId']);
-
-Route::get('/orders-delivered/user/{user_id}', [OrdersDeliveredController::class, 'getByUserId']);
-Route::post('/orders-delivered', [OrdersDeliveredController::class, 'store']);
-
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth.redirect')->group(function () {
+    Route::apiResource('/pending-orders', PendingOrderController::class);
+    Route::get('/pending-orders/user/{user_id}', [PendingOrderController::class, 'getByUserId']);
+    
+    Route::get('/orders-delivered/user/{user_id}', [OrdersDeliveredController::class, 'getByUserId']);
+    Route::post('/orders-delivered', [OrdersDeliveredController::class, 'store']);
+    
+    Route::get('/user', function (Request $request) {
+        return $request->user();
+    });
 });
