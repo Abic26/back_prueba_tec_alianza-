@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PendingOrderController;
 use App\Http\Controllers\OrdersDeliveredController;
@@ -20,6 +21,8 @@ use App\Http\Controllers\OrdersDeliveredController;
 */
 
 Route::post('/users', [UserController::class, 'store']);
+
+Route::post('/login', [LoginController::class, 'login']);
 
 Route::apiResource('/pending-orders', PendingOrderController::class);
 Route::get('/pending-orders/user/{user_id}', [PendingOrderController::class, 'getByUserId']);
