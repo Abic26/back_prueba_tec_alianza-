@@ -16,7 +16,7 @@ Sigue estos pasos para instalar y ejecutar la aplicación:
 
 1. Clonar el proyecto 
 ```sh
-git clone https://github.com/Abic26/Back_Eglobal_Monograph_Dashboard.git
+git clone https://github.com/Abic26/back_prueba_tec_alianza-.git
 ```
 2. Seleccione donde descargo el proyecto:
 ```sh
@@ -44,7 +44,7 @@ php artisan serve
 Cómo contribuir al proyecto.
 1. Clonar el proyecto:
 ```sh
-git clone https://github.com/Abic26/Back_Eglobal_Monograph_Dashboard.git
+git clone https://github.com/Abic26/back_prueba_tec_alianza-.git
 ```
 2. Crea una rama para la contribución: 
 ```sh
