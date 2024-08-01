@@ -1,10 +1,12 @@
-# Proyecto Monograph Dashboard
+
+# Backend prueba tec. Alianza
 
 Proyecto backend para gestionar y visualizar los datos que se envian a la base de datos que se creo para poder utilizar los metodos "GET", "POST", "DELETE" para [Front Prueba Tec. Alianza](https://github.com/Abic26/front_prueba_tec_alianza.git) mediante el sistema de inicio de sesión y registro de usuarios. Este proyecto brinda acceso a los usuarios para explorar bebidas, crear los datos de la base de datos del proyecto.
 
 ## Tabla de Contenidos
 
 - [Instalación](#instalación)
+- [API Reference](#API)
 - [Contribución](#Contribución)
 - [Créditos](#créditos)
 - [Licencia](#licencia)
@@ -38,6 +40,75 @@ php artisan migrate
 ```sh
 php artisan serve
 ```
+
+
+## API Reference
+
+#### Users
+
+```http
+  POST /users
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `name` | `string` | **Required**. Name of the user |
+| `email` | `string` | **Required**. Email of the user |
+| `password` | `string` | **Required**. Password of the user |
+
+#### User Login
+
+```http
+  POST /login
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `email`      | `string` | **Required**. Email of the user |
+| `password`      | `string` | **Required**. Password of the user |
+
+#### Get Pending Orders by User ID
+
+```http
+  GET /pending-orders/user/${user_id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `user_id`      | `string` | **Required**. Id of the user to fetch pending orders |
+
+
+#### Get Delivered Orders by User ID
+
+```http
+  GET /orders-delivered/user/${user_id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `user_id`      | `string` | **Required**. Id of the user to fetch delivered  orders |
+
+
+#### Store Delivered Orders
+
+```http
+  POST /orders-delivered
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `user_id`      | `string` | **Required**. Id of the user |
+| `order_details`      | `string` | **Required**.  Details of the delivered order |
+
+#### Get Authenticated User
+
+```http
+  GET /user
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `api_key`      | `string` | **Required**. Your API key |
 
 ## Contribución
 
@@ -83,5 +154,4 @@ Si tienes preguntas, sugerencias o comentarios sobre este proyecto, no dudes en 
 - Sitio web: [Abic26_page](https://abicdev.vercel.app/)
 
 ¡Espero escuchar tus pensamientos y opiniones!
-
 
