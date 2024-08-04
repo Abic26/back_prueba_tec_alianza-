@@ -13,8 +13,8 @@ class OrdersDelivered extends Model
 
     protected $fillable = [
         'user_id',
-        'nameDrink',  // Añadir este campo
-        'cantidad',   // Añadir este campo
+        'nameDrink', 
+        'cantidad',   
     ];
     public function items()
 {
