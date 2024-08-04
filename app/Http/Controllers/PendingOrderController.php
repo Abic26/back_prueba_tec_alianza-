@@ -15,7 +15,7 @@ class PendingOrderController extends Controller
 
     public function create()
     {
-        // Si no necesitas devolver una vista, podrías simplemente retornar un mensaje
+        
         return response()->json(['message' => 'Formulario de creación cargado correctamente'], 200);
     }
 
