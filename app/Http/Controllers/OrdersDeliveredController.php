@@ -16,7 +16,6 @@ class OrdersDeliveredController extends Controller
         // Registra los datos recibidos para depuración
         Log::info(json_encode($request->all()));  // Convierte el array a JSON antes de registrar
 
-        // Validar que la estructura de los datos sea un array de objetos
         $request->validate([
             '*.id' => 'required|integer',
             '*.items' => 'required|array',
