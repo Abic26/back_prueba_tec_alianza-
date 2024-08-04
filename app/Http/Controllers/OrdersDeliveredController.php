@@ -30,7 +30,7 @@ class OrdersDeliveredController extends Controller
                 // Crear un nuevo pedido en OrdersDelivered
                 $orderDelivered = OrdersDelivered::create([
                     'user_id' => $orderData['id'],
-                    'nameDrink' => $item['nameDrink'],  // Asegúrate de usar el nombre correcto
+                    'nameDrink' => $item['nameDrink'], 
                     'cantidad' => $item['cantidad'],
                 ]);
             }
